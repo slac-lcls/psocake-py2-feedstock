@@ -1,13 +1,13 @@
 {% set name = 'psocake' %}
-{% set version = '01.00.12' %}
+{% set version = '01.00.13' %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/lcls-psana/{{ name }}/archive/V01-00-12.tar.gz
-  sha256: 23678d297f2f5ddd42e0c532f7f00555784c5eebac08d34ef609742f6761ea89
+  url: https://github.com/lcls-psana/{{ name }}/archive/V01-00-13.tar.gz
+  sha256: ed347dec5e62ab041607ac0253a70b01440ad7ac5f303473b01bef63c537ef0d
 
 build:
   skip: True  # [win or osx]
