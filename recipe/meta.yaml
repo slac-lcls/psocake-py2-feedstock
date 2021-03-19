@@ -1,13 +1,13 @@
 {% set name = 'psocake' %}
-{% set version = '01.00.13' %}
+{% set version = '00.06.03' %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/lcls-psana/{{ name }}/archive/V01-00-13.tar.gz
-  sha256: ed347dec5e62ab041607ac0253a70b01440ad7ac5f303473b01bef63c537ef0d
+  url: https://github.com/lcls-psana/{{ name }}/archive/V00-06-03.tar.gz
+  sha256: 098678618a335bb2e8b25ceae8c3498f4c3056fd9e03467948bab18252afb46d 
 
 build:
   skip: True  # [win or osx]
@@ -17,20 +17,20 @@ build:
 
 requirements:
   host:
-    - python
-    - setuptools
-    - pip
+    - python=2.7.15
+    - setuptools=44.0.0
+    - pip=20.1.1
   run:
-    - python
-    - numpy
-    - scipy
-    - pandas
-    - pyqtgraph
-    - pyqt
-    - h5py
-    - scikit-learn
-    - mpi4py
-    - scikit-image
+    - python=2.7.15
+    - numpy=1.16.5
+    - scipy=1.2.0
+    - pandas=0.24.2
+    - pyqtgraph=0.11.0
+    - pyqt=5.12.3
+    - h5py=2.10.0
+    - scikit-learn=0.20.4
+    - mpi4py=3.0.3
+    - scikit-image=0.14.3
 
 test:
   imports:
